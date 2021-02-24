@@ -1,0 +1,18 @@
+{
+  "name": "pw-1.9-bug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Fedor S",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "jest-playwright-preset": "^1.4.2",
+    "playwright": "1.9.0"
+  },
+  "scripts": {
+    "test": "jest --forceExit"
+  },
+  "jest": {
+    "preset": "jest-playwright-preset"
+  }
+}
