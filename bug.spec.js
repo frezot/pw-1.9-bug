@@ -8,14 +8,9 @@ test("Selector [text=] bug", async () => {
 
   await page.goto(`file:${path.join(__dirname, "test.html")}`);
 
-  const container = await page.waitForSelector("#target_container");
-
-  const nestedItemFindByText = await container.waitForSelector(
-    'text="Illon M."',
-    {
-      timeout: 1_000,
-    }
-  );
+  const nestedItemFindByText = await page.waitForSelector('text="Illon M."', {
+    timeout: 1_000,
+  });
 
   console.log(await nestedItemFindByText.innerHTML());
 });
